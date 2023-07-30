@@ -1,27 +1,249 @@
 .App{
-  width: 70%;
-  margin: auto;
+  width: 100%;
+  background-color: rgb(243,242,239);
   padding: 0;
 }
 
 /***************************/
 /******** Navbar css ******/
 /**************************/
+.nav{
+    width: 100%;
+    height: 3.7rem;
+    background-color: white;
+}
 .navbar{
-    border: 1px solid;
-    height: 3rem;
+    width: 75%;
+    margin: auto;
+    height: 3.7rem;
 }
 .navbar .navbar-part-one{
- border: 1px solid red;
  width: 30%;
+ height: 3rem;
+}
+.navbar .navbar-part-one svg{
+        color: rgb(10,102,194);
+        width: 2.7rem;
+        cursor: pointer;
+        height: fit-content;
+}
+.navbar .navbar-part-one input{
+    border: none;
+    background-color: rgb(238,243,248);
+    border-radius: .3rem;
+    width: 100%;
+    height: 2.2rem;
+    margin-top: .2rem;
 }
 .navbar .navbar-part-two{
-    border: 1px solid red;
     width: 70%;
+    height: 3rem;
    }
 .navbar ul li{
     list-style: none;
 }
 .navbar ul{
     float: right;
+}
+.navbar .navbar-part-two .dropdown-menu[data-bs-popper]{
+   min-width: 15rem !important;
+   left: -12.5rem !important;
+}
+.navbar .navbar-part-two .dropdown-menu .navbar .navbar-part-two .dropdown-menu .btn-check:focus+.btn, .btn:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 25%) !important;
+}
+.navbar .navbar-part-two .dropdown-menu img{
+   height: 3rem;
+   border-radius: 1.5rem;
+}
+.navbar .navbar-part-two .dropdown-menu ul li{
+    color: rgb(94,94,94);
+}
+.navbar .navbar-part-two .dropdown-menu ul li h6{
+    font-weight: 600;
+    color: black;
+}
+.navbar .navbar-part-two .dropdown-menu label{
+    font-size: .9rem;
+}
+
+.dropdown{
+    width: 3rem;
+    height:3.9rem;
+    position: relative;
+}
+.dropdown button >img{
+    width:2rem;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    border-radius: 50%;
+}
+.dropdown button label{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    cursor: pointer;
+    font-size: .8rem;
+}
+.dropdown .dropdown-toggle::after{
+    position: absolute;
+    bottom: 30%;
+    left: 40%;
+}
+.navbar-part-two label{
+    font-size: .8rem;
+}
+
+/*************************************/
+/******** Home left sidebar css ******/
+/*************************************/
+.home{
+    height:  100vh;
+    width: 75%;
+    margin: auto;
+}
+.home-left-sidebar {
+    height: fit-content;
+    overflow: hidden;
+    border-radius: .7rem;
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(224,223,220,1);
+-moz-box-shadow: 0px 0px 6px 1px rgba(224,223,220,1);
+box-shadow: 0px 0px 6px 1px rgba(224,223,220,1);
+}
+.home-left-sidebar .user{
+ height: 8.5rem;
+ position: relative;
+}
+.home-left-sidebar .user label{
+        font-weight: 500;
+}
+.home-left-sidebar .user span{
+    font-size: .8rem;
+    color: rgb(94,94,94);
+}
+.home-left-sidebar-part-one{
+    width: 20%;
+    height: fit-content;
+}
+
+.home-left-sidebar .user img{
+        width: 100%;      
+}
+.home-left-sidebar .user .img{
+    position: absolute;
+    width: 30%;
+    border-radius: 50%;
+    top: 16%;
+    left: 35%;
+}
+
+.home-left-sidebar .row span{
+    font-size: .8rem;
+    color: rgb(94,94,94);
+    font-weight: 500;
+}
+
+.home-left-sidebar .tools span{
+    font-size: .8rem;
+    font-weight: 600;
+    border-bottom: 1px solid;
+}
+.home-left-sidebar .tools label{
+    font-size: .8rem;
+}
+.home-left-sidebar .my-item span{
+    font-weight: 600;
+    font-size: .8rem;
+    margin-left: .7rem;
+}
+
+.home-left-sidebar >div>span{
+    font-weight: 600;
+    font-size: .8rem;
+    margin-left: .7rem;
+    color: rgb(10,102,194);
+}
+
+/*********** home middle css **********/
+.mid{
+    width: 50%;
+}
+.home-middle{
+    border: 1px solid;
+    width: 100%;
+    background-color: white;
+    height: 8rem;
+    border: 1px solid rgb(178,178,178);
+    border-radius: 1rem;
+}
+.home-middle img{
+    width: 3rem;
+    border-radius: 50%;
+}
+.home-middle button{
+    border-radius: 2rem;
+    border: 1px solid rgb(178,178,178);
+    padding: .7rem;
+    font-size: .9rem;
+    background-color: white;
+    width: 100%;
+    font-weight: 500;
+    color: rgb(121,121,121);
+}
+.home-middle .part-two button{
+     font-weight: 500;
+     font-size: .9rem;
+     text-align: left;
+    width: 100%;
+    background-color: white;
+    border:none;
+    color: rgb(121,121,121);
+}
+.home-middle .dropdown button{
+    width: fit-content;
+    border: none;
+    background-color: transparent;
+}
+.home-middle .dropdown .dropdown-toggle::after {
+    position: absolute;
+    bottom: 58%;
+    left: 200%;
+}
+.home-middle .dropdown button:hover{
+    color: rgb(121,121,121);
+}
+.home-middle hr{
+    height: 2px;
+}
+.home-middle .dropdown-menu:hover{
+  pointer-events: none;
+}
+/***** home-right-sidebar css ****/
+.home-right-sidebar{
+    width: 28%;
+}
+.home-right-part-one label{
+    font-weight: 600;
+}
+.home-right-part-one{
+    background-color: white;
+    border-radius: .7rem;
+}
+.home-right-part-one ul{
+    list-style: none;
+    width: 100%;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.home-right-part-one ul span{
+    font-size: .8rem;
+    color: rgb(121,121,121);
+    padding-left: .9rem;
+    font-weight: 100;
+}
+.home-right-part-one ul  li{
+    padding-top: .5rem;
 }
