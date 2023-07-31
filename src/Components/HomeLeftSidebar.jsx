@@ -10,8 +10,9 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const HomeLeftSidebar = () => {
   return (
     <>
-    <div className="d-flex flex-column home-left-sidebar pb-2">
-      <div className="d-flex flex-column user">
+      
+    <div className="d-flex flex-column home-left-sidebar">
+      <div className="d-flex flex-column user mb-3">
         <img src="https://media.licdn.com/dms/image/C4E16AQFsOMkHrgCQNg/profile-displaybackgroundimage-shrink_200_800/0/1610794986408?e=1695859200&v=beta&t=hDSg893ZNqtLxOiwrh1osjxpG_XyAdPExcOKXo0rHls"></img>
         <label className="mt-5"> Saurabh Upreti</label>
         <span> MERN Stack Developer</span>
@@ -28,7 +29,7 @@ const HomeLeftSidebar = () => {
         <div className="col-2"><span style={{color:'rgb(10,102,194)'}}>444</span></div>
         </div>
       </div>
-      <hr/>
+      <hr />
         <div className="px-3 tools text-start">
           <label htmlFor="">Access exclisive tools & insights</label><br/>
           <li-icon aria-hidden="true" type="premium-chip" class="feed-identity-module__premium-icon mr1 flex-shrink-zero"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" class="mercado-match" width="24" height="24" focusable="false">
@@ -42,7 +43,7 @@ const HomeLeftSidebar = () => {
         <BookmarkIcon style={{ fontSize:'1.3rem'}} /> <span>My Items</span>
       </div>
       </div>
-    <div className="d-flex flex-column home-left-sidebar pb-2 mt-2">
+    <div className="d-flex flex-column home-left-sidebar2">
       
       <div className="d-flex flex-column text-start mt-3">
           <Accordion style={{ boxShadow: 'none'}}>
